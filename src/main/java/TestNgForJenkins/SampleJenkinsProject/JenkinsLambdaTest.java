@@ -39,7 +39,7 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("resolution", System.getenv("LT_RESOLUTION"));
 
 		capabilities.setCapability("tunnel",true);
-		capabilities.setCapability("tunnelName",System.getenv("LT_TUNNEL_NAME"));
+		capabilities.setCapability("tunnelName", "Ramit-007");
 
 
 
