@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="4015" started-at="2019-09-24T05:16:53Z" finished-at="2019-09-24T05:16:57Z">
+    <groups>
+    </groups>
+    <test name="jenkinsTest" duration-ms="4015" started-at="2019-09-24T05:16:53Z" finished-at="2019-09-24T05:16:57Z">
+      <class name="TestNgForJenkins.SampleJenkinsProject.JenkinsLambdaTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestNgForJenkins.SampleJenkinsProject.JenkinsLambdaTest@71be98f5]" name="setUp" is-config="true" duration-ms="3985" started-at="2019-09-24T05:16:53Z" finished-at="2019-09-24T05:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNgForJenkins.SampleJenkinsProject.JenkinsLambdaTest@71be98f5]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-24T05:16:57Z" finished-at="2019-09-24T05:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testSimple()[pri:0, instance:TestNgForJenkins.SampleJenkinsProject.JenkinsLambdaTest@71be98f5]" name="testSimple" duration-ms="0" started-at="2019-09-24T05:16:57Z" finished-at="2019-09-24T05:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSimple -->
+      </class> <!-- TestNgForJenkins.SampleJenkinsProject.JenkinsLambdaTest -->
+    </test> <!-- jenkinsTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>
