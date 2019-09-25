@@ -38,8 +38,8 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("console", true); // To capture console logs
 		capabilities.setCapability("resolution", System.getenv("LT_RESOLUTION"));
 
-		capabilities.setCapability("tunnel",true);
-		capabilities.setCapability("tunnelName", "Ramit-007");
+		//capabilities.setCapability("tunnel",true);
+		//capabilities.setCapability("tunnelName", "Ramit-007");
 
 
 
@@ -57,26 +57,31 @@ public class JenkinsLambdaTest {
 	public void testSimple() throws Exception {
 		try {
 			
+			/*
 			driver.get("http://localhost.lambdatest.com/attendance/attendance_view.php");
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
-	        
-			/*
+	        */
+			
+			System.out.println("Opening URL");
 			driver.get("https://apple.com/");
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
 
+			System.out.println("iPad");
 			driver.findElement(By.xpath("//*[@id=\'ac-globalnav\']/div/ul[2]/li[3]")).click();
 			Thread.sleep(2000);
 
+			System.out.println("iPad Air");
 			driver.findElement(
 					By.cssSelector("#chapternav > div > ul > li.chapternav-item.chapternav-item-ipad-air > a")).click();
 			Thread.sleep(2000);
 
+			System.out.println("Why iPad");
 			driver.findElement(By.linkText("Why iPad")).click();
 			Thread.sleep(2000);
-			*/
-			System.out.println("Test Execution 	Finished");
+			
+			System.out.println("Test Execution Finished");
 					
 			
 			
