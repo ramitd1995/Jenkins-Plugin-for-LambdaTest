@@ -24,7 +24,7 @@ public class JenkinsLambdaTest {
 	@BeforeTest
 	public void setUp() throws Exception {
 		
-		Thread.sleep(4000);
+		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
@@ -42,6 +42,7 @@ public class JenkinsLambdaTest {
 
 		capabilities.setCapability("tunnel",true);
 		capabilities.setCapability("tunnelName", "Ramit-007");
+		Thread.sleep(10000);
 
 
 
