@@ -41,8 +41,8 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("resolution", System.getenv("LT_RESOLUTION"));
 
 		capabilities.setCapability("tunnel",true);
-		capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
-		Thread.sleep(10000);
+		//capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
+		//Thread.sleep(10000);
 
 
 
