@@ -23,6 +23,8 @@ public class JenkinsLambdaTest {
 
 	@BeforeTest
 	public void setUp() throws Exception {
+		
+		Thread.sleep(4000);
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
