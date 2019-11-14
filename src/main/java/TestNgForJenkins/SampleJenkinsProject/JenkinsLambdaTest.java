@@ -40,7 +40,7 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("console", true); // To capture console logs
 
 		capabilities.setCapability("tunnel",true);
-		capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
+		//capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
 		
 
 
