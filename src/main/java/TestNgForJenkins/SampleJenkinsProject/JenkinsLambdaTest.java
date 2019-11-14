@@ -38,7 +38,6 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("visual", true);
 		capabilities.setCapability("video", true); // To enable video recording`
 		capabilities.setCapability("console", true); // To capture console logs
-		capabilities.setCapability("resolution", System.getenv("LT_RESOLUTION"));
 
 		capabilities.setCapability("tunnel",true);
 		//capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
