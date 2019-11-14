@@ -39,8 +39,8 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("video", true); // To enable video recording`
 		capabilities.setCapability("console", true); // To capture console logs
 
-		//capabilities.setCapability("tunnel",true);
-		//capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
+		capabilities.setCapability("tunnel",true);
+		capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
 		
 
 
@@ -59,15 +59,17 @@ public class JenkinsLambdaTest {
 	public void testSimple() throws Exception {
 		try {
 			
-			/*
+			
 			driver.get("http://localhost.lambdatest.com/attendance/attendance_view.php");
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
-	        */
+	        
 			
+			
+			
+			/*
+			 
 			System.out.println("Opening URL");
-			
-			
 			driver.get("https://apple.com/");
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
@@ -84,7 +86,7 @@ public class JenkinsLambdaTest {
 			System.out.println("Why iPad");
 			driver.findElement(By.linkText("Why iPad")).click();
 			Thread.sleep(2000);
-			
+			*/
 			
 			System.out.println("Test Execution Finished");
 					
