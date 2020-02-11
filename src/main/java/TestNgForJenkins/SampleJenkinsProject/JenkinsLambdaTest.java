@@ -17,7 +17,7 @@ public class JenkinsLambdaTest {
 	public String accesskey = System.getenv("LT_ACCESS_KEY");
 	public RemoteWebDriver driver = null;
 	public String gridURL = System.getenv("LT_GRID_URL");
-	boolean status = false;
+	String status = "passed";
 
 	
 
@@ -39,7 +39,7 @@ public class JenkinsLambdaTest {
 		capabilities.setCapability("video", true); // To enable video recording`
 		capabilities.setCapability("console", true); // To capture console logs
 
-		capabilities.setCapability("tunnel",true);
+		//capabilities.setCapability("tunnel",true);
 		//capabilities.setCapability("tunnelName", System.getenv("LT_TUNNEL_NAME"));
 		
 
@@ -60,33 +60,27 @@ public class JenkinsLambdaTest {
 		try {
 			
 			
-			driver.get("http://localhost.lambdatest.com/attendance/attendance_view.php");
-			driver.manage().window().maximize();
-			Thread.sleep(5000);
+//			driver.get("http://localhost.lambdatest.com/attendance/attendance_view.php");
+//			driver.manage().window().maximize();
+//			Thread.sleep(5000);
 	        
 			
 			
 			
-			/*
+			
 			 
 			System.out.println("Opening URL");
-			driver.get("https://apple.com/");
-			driver.manage().window().maximize();
-			Thread.sleep(5000);
-
-			System.out.println("iPad");
-			driver.findElement(By.xpath("//*[@id=\'ac-globalnav\']/div/ul[2]/li[3]")).click();
+			driver.get("https://lambdatest.github.io/sample-todo-app/");
 			Thread.sleep(2000);
 
-			System.out.println("iPad Air");
-			driver.findElement(
-					By.cssSelector("#chapternav > div > ul > li.chapternav-item.chapternav-item-ipad-air > a")).click();
-			Thread.sleep(2000);
+			driver.findElement(By.name("li1")).click();
 
-			System.out.println("Why iPad");
-			driver.findElement(By.linkText("Why iPad")).click();
+			driver.findElement(By.name("li2")).click();
+
+			driver.findElement(By.id("sampletodotext")).sendKeys("Yey, Let's add it to list");
+			driver.findElement(By.id("addbutton")).click();
 			Thread.sleep(2000);
-			*/
+			
 			
 			System.out.println("Test Execution Finished");
 					
